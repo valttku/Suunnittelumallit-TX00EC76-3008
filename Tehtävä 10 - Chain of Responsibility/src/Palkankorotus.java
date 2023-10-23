@@ -6,9 +6,9 @@ public abstract class Palkankorotus {
         this.successor = successor;
     }
 
-    public void processWageRise(double oldWage, double newWage) {
+    public void processWageRise(double currentWage, double newWage) {
         if (successor != null) {
-            successor.processWageRise(oldWage, newWage);
+            successor.processWageRise(currentWage, newWage);
         }
     }
 
